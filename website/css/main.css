@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Lora&family=Passion+One&family=Playfair+Display&family=Roboto&family=Work+Sans:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Lora&family=Passion+One&family=Playfair+Display&family=Roboto&family=Work+Sans:wght@200&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+}
+.banner {
+    background-color: black;
+    background-image: url("../images/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    color: white;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1 {
+    margin: 0;
+}
+
+
+
+form input {
+    display: block;
+    margin: 10px 0;
+    width: 300px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+form {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.lat-long-form {
+    display: none;
+}
+
+form button {
+    background-color: #ffffff;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 10px;
+    border: 0.5px rgba(0, 0, 245, 0.5) solid;
+    transition:
+        background-color .2s cubic-bezier(0.075, 0.82, 0.165, 1) .2s,
+        color .2s ease-in .2s;
+}
+form button:hover {
+    background-color: blue;
+    color: white;
+}
+.weather-form {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+form input:focus{
+    border: none;
+    outline: 2px solid rgba(0, 0, 255, 0.5);
+}
+
+.options {
+    margin: 10px;
+    padding: 7px;
+}
+
+.options select {
+    padding: 6px;
+    margin-left: 8px;
+    border-radius: none;
+}
+
+.options select:focus{
+    border: none;
+    outline: 2px solid rgba(0, 0, 245, 0.5);
+}
+
+.forms {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.generated-results {
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 50vw;
+    margin-top: 15%;
+    margin-left: 25%;
+    margin-bottom: 30px;
+    display: none;
+}
+
+
+.generated-results h1{
+    font-family: 'Lora', serif;
+}
+
+#close--icon {
+    width: 25px;
+    float: right;
+    margin: 10px;
+}
+
+.generated-results span {
+    color: darkblue;
+    font-weight: 1000;
+    font-family: 'roboto', sans-serif;
+}
+
+.generated-results h1 span {
+    color: black;
+}
+
+.error-message {
+    color: white;
+    background-color: red;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    display: none;
+}
+
+
+
+.helper {
+    padding: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    background-color: lightgray;
+}
+
+.helper .tips {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.helper .tips div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.helper .tips ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 30px;
+}
+
+.helper .tips dd {
+    margin: 0;
+}
+
+
+dt {
+    font-weight: bold;
+}
+
+@media(max-width:679px){
+    .helper .tips {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+}

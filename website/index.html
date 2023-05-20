@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/main.js"></script>
+    <script src="./js/helper.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Weather Journal</title>
+</head>
+<body>
+    <div class="banner">
+        <h1>Weather ForeCast Today</h1>
+    </div>
+
+    <div class="options">
+        <div>
+            <span>Search Options</span>
+            <select name="options" id="search-options">
+                <option value="zip-code-form">Zip Code</option>
+                <option value="lat-long-form">Lattide and Longitude</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="forms">
+        <div class="zip-code-form weather-form">
+            <h2>Search by City's Zip Code</h2>
+            <form action="" role="form" id="zip-code-form">
+                <label for="city">City</label>
+                <input type="text" placeholder="enter city (optional)" id="city">
+                <label for="zipCode">*Zip Code</label>
+                <input type="text" placeholder="Zip Code" id="zipCode">
+                <button>Check Weather</button>
+            </form>
+        </div> <!--Zip Code form-->
+
+        <div class="lat-long-form weather-form">
+            <h2>Search by latitude and longitude</h2>
+            <form action="" role="form" id="lat-long-form">
+                <label for="lat">Latitude</label>
+                <input type="text" placeholder="latitude e.g -1.286389">
+                <label for="long">Longitude</label>
+                <input type="text" placeholder="longitude e.g 36.817223">
+                <button>Check Weather</button>
+
+            </form>
+        </div> <!--latitude and longitude form-->
+    </div>
+
+
+    <div class="generated-results">
+        <img src="./images/close.png" alt="close icon" id="close--icon">
+        <h1><span id="City"></span></h1>
+        <h3>country <span id="country"></span></h3>
+        <p>Description <span id="description"></span></p>
+        <p>Min Temperature <span id="min-temp"></span>&deg;C</p>
+        <p>Max Temperature <span id="max-temp"></span>&deg;C</p>
+        <p>Feels Like <span id="feels-like"></span>&deg;C</p>
+        <p>Humidity <span id="humidity"></span>%</p>
+        <p>Cloudines <span id="cloudiness">%</span></p>
+        <p>Visibility <span id="visibility"></span>m</p>
+        <p>Wind Speed <span id="wind-speed"></span>m/s</p>
+        <p>Sunrise <span id="sunrise"></span> local time</p>
+        <p>Sunset <span id="sunset"></span> local time</p>
+    </div>
+
+    <div class="error-message">
+        <p>Invalid Zip Code! Try again</p>
+    </div>
+
+    <div class="helper">
+        <h1>Lets Get You started</h1>
+        <p>Here are some random zip codes, latitudes and longitudes of random places</p>
+        <div class="tips">
+            <div class="zips">
+                <div><h2>Zip Codes</h2></div>
+            </div>
+            <div class="latlons">
+                <div><h2>Latitudes & Longitudes</h2></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
