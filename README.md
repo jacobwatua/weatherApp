@@ -6,7 +6,7 @@ This is a web application built with Express.js that provides weather informatio
 Retrieve and display current weather information based on user input.
 Automatically detects the user's geolocation to provide weather information for their current location.
 Displays weather icons corresponding to the weather conditions.
-Supports both Celsius and Fahrenheit temperature units.
+Supports both Celsius units.
 Prerequisites
 Before running the application, make sure you have the following installed:
 
