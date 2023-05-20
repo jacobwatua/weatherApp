@@ -1,4 +1,4 @@
-<h1>Express Weather Ap<h1>
+<h1>Express Weather App<h1>
 <h1>Description</h1>
 This is a web application built with Express.js that provides weather information using the OpenWeatherMap API. Users can enter a location and get the current weather conditions, including temperature, humidity, wind speed, and weather description.
 
